@@ -274,8 +274,8 @@
    \begin{tabular}{l l l l }
  \textbf{ } \hspace*{35pt} \textbf{ } &  \textbf{ } \hspace*{35pt} \textbf{ } & Author: & {\textbf{\@author}} \\ 
  \textbf{ } \hspace*{35pt} \textbf{ } &  \textbf{ } \hspace*{35pt} \textbf{ } & \textbf{ } \hspace*{35pt} \textbf{ } & Class AS-K56 \\[0.2cm] 
- \textbf{ } \hspace*{35pt} \textbf{ } &  \textbf{ } \hspace*{35pt} \textbf{ } & Supervisor: & {\textbf{Assoc. Prof.}} \\
- \textbf{ } \hspace*{35pt} \textbf{ } &  \textbf{ } \hspace*{35pt} \textbf{ } & \textbf{ } \hspace*{35pt} \textbf{ } & {\textbf{\@supervisor}}
+ \textbf{ } \hspace*{35pt} \textbf{ } &  \textbf{ } \hspace*{35pt} \textbf{ } & Supervisor: & {\textbf{Prof. Yamaguchi Masahiro}} \\
+ \textbf{ } \hspace*{35pt} \textbf{ } &  \textbf{ } \hspace*{35pt} \textbf{ } & \textbf{ } \hspace*{35pt} \textbf{ } & {\textbf{Prof. Huynh Quyet Thang}}
     \end{tabular}\\
     }}
   \begin{center}
