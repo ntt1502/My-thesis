@@ -1,0 +1,6 @@
+PWD /Users/huyvq/workspace/thesis/reports/TeX/thesis/Chapter3
+INPUT /usr/local/texlive/2015basic/texmf.cnf
+INPUT /usr/local/texlive/2015basic/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2015basic/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/huyvq/workspace/thesis/reports/TeX/thesis/Chapter3/chapter3.tex
+OUTPUT /Users/huyvq/workspace/thesis/reports/TeX/thesis/Chapter3/chapter3.log

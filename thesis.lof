@@ -1,0 +1,34 @@
+\select@language {english}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Node $x$\IeC {\textquoteright }s void with respect to destination $D$.\relax }}{3}{figure.caption.3}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces An example of hole polygon.\relax }}{4}{figure.caption.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces TENT rule: Node $p$ has no neighbors closer to the back regions as determined by the intersection of bisectors of adjacent links.\relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces BOUNDHOLE algorithm: Greedy sweeping at $t_1$\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The Efficient Hole Detour Scheme (cited from \cite {ehds}). Illustration for the hole approximation phase.\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The Efficient Hole Detour Scheme (cited from \cite {ehds}). Illustration for the data forwarding phase. The forbidden area is the circumscribed circle of the hole polygon.\relax }}{12}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The routing path is enlarged in case of near hole routing.\relax }}{13}{figure.caption.14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces An example of approximate polygon.\relax }}{14}{figure.caption.15}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Regions with respect to a specific routing hole.\relax }}{14}{figure.caption.16}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The parallelogram of the sensor node $P$\relax }}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces ELBAR packet forwarding example.\relax }}{15}{figure.caption.18}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Examples of the \emph {OCTAGON} routing scheme\relax }}{17}{figure.caption.19}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustrations of definition \ref {def-view-limit-vertex}, \ref {def-beta-covering}\relax }}{19}{figure.caption.20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An example of inner polygons.\relax }}{19}{figure.caption.21}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An example of proposed routing path.\relax }}{21}{figure.caption.22}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces An example of polygon's skeleton.\relax }}{24}{figure.caption.26}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces An example of choosing VA-points which are vertices of scale polygon.\relax }}{26}{figure.caption.28}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The architecture of \emph {ns-2}.\relax }}{30}{figure.caption.31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces An example of event-chain in \emph {ns-2}.\relax }}{30}{figure.caption.32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Screen of Voronoi diagram construction.\relax }}{32}{figure.caption.35}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces New design of WisSim Analyzer screen.\relax }}{32}{figure.caption.36}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Comparison of average energy consumption\relax }}{39}{figure.caption.43}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Comparison of deviation of energy consumption\relax }}{40}{figure.caption.44}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Visual view of energy consumption of individual sensor nodes\relax }}{41}{figure.caption.45}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Comparison of average path length\relax }}{41}{figure.caption.46}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Impact of $\delta $ on: average energy consumption, deviation of energy consumption and average path length\relax }}{42}{figure.caption.47}
+\addvspace {10\p@ }

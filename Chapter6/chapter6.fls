@@ -1,0 +1,10 @@
+PWD /Users/huyvq/Dropbox/Thesis/Latex/thesis/Chapter6
+INPUT /usr/local/texlive/2015basic/texmf.cnf
+INPUT /usr/local/texlive/2015basic/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2015basic/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/huyvq/Dropbox/Thesis/Latex/thesis/Chapter6/chapter6.tex
+OUTPUT /Users/huyvq/Dropbox/Thesis/Latex/thesis/Chapter6/chapter6.log
+INPUT /usr/local/texlive/2015basic/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+OUTPUT /Users/huyvq/Dropbox/Thesis/Latex/thesis/Chapter6/chapter6.pdf
+INPUT /usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2015basic/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm

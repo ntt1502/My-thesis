@@ -1,0 +1,67 @@
+đối với kịch bản mạng lớn: (hiện tại là 3600 nodes)
+
+- thời gian mô phỏng: > 500s. nên để 1000s
+	-> sửa trực tiếp trong wissim 
+	-> hoặc sửa trong file simulate.tcl (dòng 5: set opt(stop)	500	;# simulation time)
+
+- sửa thời gian của các pha:
++) file tcl/lib/ns-lib.tcl: file này lưu thiết lập thời gian các pha cho 2 thuật toán CORBAL và OCTAGON
+	- CORBAL: từ dòng 1221 - 1234
+		- dòng 1232: 	$self at 30 	"$ragent boundhole" -> thời gian chạy thuật toán BOUNDHOLE
+			-> sửa 30 thành 65.0 hoặc lớn hơn tuỳ theo kích thước mạng 
+	- OCTAGON: từ dòng 1205 - 1218
+		- dòng 1216: 	$self at 30 	"$ragent boundhole" -> thời gian chạy thuật toán BOUNDHOLE
+			-> sửa 30 thành 65.0 hoặc lớn hơn tuỳ theo kích thước mạng (tương tự như CORBAL)
+
+Lưu ý: sau khi sửa file ns-lib.tcl, cần phải clean->build để cập nhật tham số mới vào ns2
+
+- sửa thời gian gửi gói tin CBR (file cbr.tcl - sinh ra từ Wisssim)
+	- ở cuối file sẽ có 1 đoạn code như này:
+
+for {set i 0} {$i < $opt(tn)} {incr i} {
+    $mnode_($s($i)) setdest [$mnode_($d($i)) set X_] [$mnode_($d($i)) set Y_] 0
+
+    set sink_($i) [new Agent/Null]
+    set udp_($i) [new Agent/UDP]
+    $ns_ attach-agent $mnode_($d($i)) $sink_($i)
+    $ns_ attach-agent $mnode_($s($i)) $udp_($i)
+    $ns_ connect $udp_($i) $sink_($i)
+    $udp_($i) set fid_ 2
+
+    #Setup a CBR over UDP connection
+    set cbr_($i) [new Application/Traffic/CBR]
+    $cbr_($i) attach-agent $udp_($i)
+    $cbr_($i) set type_ CBR
+    $cbr_($i) set packet_size_ 50
+    $cbr_($i) set rate_ 0.1Mb
+    $cbr_($i) set interval_ $opt(interval_1)
+    #$cbr set random_ false
+
+(1)    $ns_ at [expr 100 + [expr $i - 1] * $opt(interval_1) / $opt(tn)] "$cbr_($i) start" 
+    $ns_ at 199 "$cbr_($i) stop"
+
+    # Setup a CBR over UDP connection
+    set cbr2_($i) [new Application/Traffic/CBR]
+    $cbr2_($i) attach-agent $udp_($i)
+    $cbr2_($i) set type_ CBR
+    $cbr2_($i) set packet_size_ 50
+    $cbr2_($i) set rate_ 0.1Mb
+    $cbr2_($i) set interval_ $opt(interval)
+
+(2)    $ns_ at [expr 200 + [expr $i - 1] * $opt(interval) / $opt(tn)] "$cbr2_($i) start"
+    $ns_ at [expr $opt(stop) - 5] "$cbr2_($i) stop"
+}
+
+Ta cần sửa các dòng (1) và (2) để điều chỉnh thời gian gửi gói tin CBR lùi sau thời gian broadcast.
+sửa dòng 1:
+	$ns_ at [expr 100 + [expr $i - 1] * $opt(interval_1) / $opt(tn)] "$cbr_($i) start" 
+-> sửa thành:
+	$ns_ at [expr 500 + [expr $i - 1] * $opt(interval_1) / $opt(tn)] "$cbr_($i) start" 
+
+giải thích: tại thời điểm 100 (hoặc 500) - interval_1/số cặp CBR sẽ là thời điểm đầu tiên gửi gói tin CBR. Ta sửa 100 -> 500 để lùi đi 400 (đảm bảo an toàn) -> có thể tăng thời gian mô phỏng lên để đảm bảo thời gian gửi CBR đủ lớn
+
+sửa dòng 2:
+	$ns_ at [expr 200 + [expr $i - 1] * $opt(interval) / $opt(tn)] "$cbr2_($i) start"
+-> sửa thành:
+	$ns_ at [expr 600 + [expr $i - 1] * $opt(interval) / $opt(tn)] "$cbr2_($i) start"
+thời gian ở dòng 2 sẽ hơn thời gian ở dòng 1 là 100s.

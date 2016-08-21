@@ -1,0 +1,31 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: Acknowledgement/acknowledgement.aux
+A level-1 auxiliary file: Phieubangiao/Phieubangiao.aux
+A level-1 auxiliary file: Abstract/abstract.aux
+A level-1 auxiliary file: AbstractEng/abstract.aux
+A level-1 auxiliary file: Chapter1/chapter1.aux
+A level-1 auxiliary file: Chapter2/chapter2.aux
+A level-1 auxiliary file: Chapter3/chapter3.aux
+A level-1 auxiliary file: Chapter4/chapter4.aux
+A level-1 auxiliary file: Chapter5/chapter5.aux
+A level-1 auxiliary file: Chapter6/chapter6.aux
+A level-1 auxiliary file: Chapter7/chapter7.aux
+A level-1 auxiliary file: Chapter8/chapter8.aux
+The style file: Classes/CUEDbiblio.bst
+Database file #1: References.bib
+A bad cross reference---entry "issnip"
+refers to entry "DBLP:conf/issnip/2014", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/issnip/2014"
+Warning--to sort, need author or key in mica2
+Warning--to sort, need author or key in wissim-web
+Warning--to sort, need author or key in sedic
+Warning--empty author in mica2
+Warning--empty journal in mica2
+Warning--empty year in mica2
+Warning--empty author in sedic
+Warning--empty journal in sedic
+Warning--empty year in sedic
+Warning--empty author in wissim-web
+Warning--empty journal in wissim-web
+Warning--empty year in wissim-web
+(There was 1 error message)

@@ -1,0 +1,188 @@
+\chapter{Protocol implementation}\label{chapter6}
+\section{Implementation details}
+The proposed protocol is implemented in C++ and embedded into the core of current \emph{WisSim} toolkit. The source code is organized as follows.
+\begin{itemize}
+\item \emph{geometry}: contains implementation of geometry objects such as Point, Line, Circle, Vector, Parabola and its operators.
+\item \emph{graph/voronoi}: contains implementation of Voronoi diagram construction using \emph{Fortune} algorithm.
+\item \emph{nearholerouting}: contains implementation of the proposed protocol.
+\subitem $-$\emph{nhr.cc}: definition of class \emph{NHRAgent}. This class is the core of the protocol.
+\subitem $-$\emph{nhr.h}: header of class \emph{NHRAgent}.
+\subitem $-$\emph{nhr\_graph.cc}: definition of class \emph{NHRGraph}. This class implements operators to construct the internal graph and compute the shortest path.
+\subitem $-$\emph{nhr.cc}: header of class \emph{NHRGraph}.
+\subitem $-$\emph{nhr\_packet.h}: declaration of packet header of protocol.
+\subitem $-$\emph{nhr\_packet\_data.cc}: definition of class \emph{NHRPacketData}. This class provides methods to work with the packet payload such as add, remove, count, get size operator.
+\subitem $-$\emph{nhr\_packet\_data.h}: header of class \emph{NHRPacketData}.
+\end{itemize}
+
+In order to integrate our routing protocol into \emph{ns-2} core, we defined a new packet type for our proposed protocol and gave default values for binded attributes.
+Firstly, we added new \emph{NHR} packet type into \emph{tcl/lib/ns-packet.tcl}. We also added \emph{PT\_NHR} to the \emph{packet\_t} enumeration in \emph{common/packet.h}. Default values for binded attributes are given inside \emph{tcl/lib/ns-default.tcl}. Finally, we modified \emph{tcl/lib/ns-lib.tcl} to add procedures for creating a node with \emph{NHR} protocol.
+
+In \emph{nhr.cc}, we implemented the core of our proposed protocol. The class \emph{NHRAgent} inherits class \emph{Agent} of \emph{ns-2} and overrides \emph{command()} and \emph{recv()} method.
+
+\section{Source code listing}
+\paragraph{Packet header \\}
+The packet header of our proposed protocol is defined in \emph{nhr\_packet.h} source file. 
+\begin{lstlisting}[language=C]{nhr_packet.h}
+struct hdr_nhr {
+    nsaddr_t daddr_;
+    Point dest_;
+    Point anchor_points[10];
+    uint8_t ap_index;
+    uint8_t type;
+
+    inline int size() {
+        return 11 * sizeof(Point) + 2 * sizeof(uint8_t) + sizeof(nsaddr_t);
+    }
+
+    static int offset_;
+
+    inline static int &offset() {
+        return offset_;
+    }
+
+    inline static struct hdr_nhr *access(const Packet *p) {
+        return (struct hdr_nhr *) p->access(offset_);
+    }
+};
+\end{lstlisting}
+
+The meaning of each field is described below:
+\begin{itemize}
+\item \emph{daddr\_}: destination node' ID
+\item \emph{dest\_}: destination node's location information
+\item \emph{anchor\_points}: array of virtual anchor points
+\item \emph{ap\_index}: current index of \emph{anchor\_points} array
+\item \emph{type\_}: packet type. It receives one of following values:
+\begin{itemize}
+\item \emph{NHR\_CBR\_GPSR}: indicates greedy forwarding mode
+\item \emph{NHR\_CBR\_AWARE\_SOURCE\_ESCAPE}: indicates near hole routing mode, from inner polygon to outside
+\item \emph{NHR\_CBR\_AWARE\_SOURCE\_PIVOT}: indicates near hole routing mode
+\item \emph{NHR\_CBR\_AWARE\_OCTAGON}: indicates near hole routing mode using scale octagon
+\item \emph{NHR\_CBR\_AWARE\_DESTINATION}: indicates near hole routing mode for routing to destination
+\end{itemize}
+\end{itemize}
+The \emph{size()} function returns the total size in byte of all above fields.
+
+\paragraph{Core protocol \\}
+Our core protocol is implemented in \emph{nhr.cc} source file. In this file, the \emph{recvData()} method is source code of the hole bypassing protocol. 
+\begin{lstlisting}[language=C]{nhr.cc}
+void NHRAgent::recvData(Packet *p) {
+  struct hdr_cmn *cmh = HDR_CMN(p);
+  struct hdr_nhr *edh = HDR_NHR(p);
+  node *nexthop = NULL;
+
+  if (cmh->direction() == hdr_cmn::UP 
+      && edh->daddr_ == my_id_) // up to destination
+  {
+    port_dmux_->recv(p, 0);
+    return;
+  }
+
+  if (edh->type == NHR_CBR_GPSR && !hole_.empty()) {
+    edh->type = NHR_CBR_AWARE_SOURCE_ESCAPE;
+    edh->ap_index = 1;
+    edh->anchor_points[edh->ap_index] = endpoint_;
+  }
+
+  nexthop = getNeighborByGreedy(
+              edh->anchor_points[edh->ap_index]);
+  if (nexthop == NULL) {
+    switch (edh->type) {
+      case NHR_CBR_AWARE_SOURCE_ESCAPE:
+        edh->anchor_points[1] = endpoint_;
+        if (isPivot_) {
+          edh->type = NHR_CBR_AWARE_SOURCE_PIVOT;
+        }
+        nexthop = getNeighborByGreedy(
+                    edh->anchor_points[edh->ap_index]);
+        if (nexthop != NULL) break;
+      case NHR_CBR_AWARE_SOURCE_PIVOT:
+        if (determineOctagonAnchorPoints(p)) {
+          edh->type = NHR_CBR_AWARE_OCTAGON;
+        } else {
+            edh->ap_index = 0;
+            edh->type = NHR_CBR_AWARE_DESTINATION;
+        }
+        nexthop = getNeighborByGreedy(
+                    edh->anchor_points[edh->ap_index]);
+        if (nexthop != NULL) break;
+      case NHR_CBR_AWARE_OCTAGON:
+        while (edh->ap_index > 2 && nexthop == NULL) {
+          --edh->ap_index;
+          nexthop = getNeighborByGreedy(
+                      edh->anchor_points[edh->ap_index]);
+        }
+        if (edh->ap_index == 2) {
+          edh->ap_index = 0;
+          edh->type = NHR_CBR_AWARE_DESTINATION;
+        }
+        nexthop = getNeighborByGreedy(
+                    edh->anchor_points[edh->ap_index]);
+        if (nexthop != NULL) break;
+      case NHR_CBR_AWARE_DESTINATION:
+        routeToDest(p);
+        nexthop = getNeighborByGreedy(
+                    edh->anchor_points[edh->ap_index]);
+        break;
+      default:
+        drop(p, DROP_RTR_NO_ROUTE);
+        return;
+    }
+  }
+
+  if (nexthop == NULL) {
+    drop(p, DROP_RTR_NO_ROUTE);
+    return;
+  } else {
+      cmh->direction() = hdr_cmn::DOWN;
+      cmh->addr_type() = NS_AF_INET;
+      cmh->last_hop_ = my_id_;
+      cmh->next_hop_ = nexthop->id_;
+      send(p, 0);
+  }
+}
+\end{lstlisting}
+
+\paragraph{Tcl hooking \\}
+The procedure to initiate our protocol is written in Tcl language in \emph{ns-lib.tcl} source file. This procedure first creates an instance of routing protocol (line \#3), then sets up the parameters for each sensor node (line \#4 - \#11). Our protocol receives 2 commands to start specific events. In the beginning of the simulation process (0.0 second), all the sensor nodes start the protocol and send the HELLO packet to collect their neighbors information (line \#12). Then at second 30.0, the \emph{BOUNDHOLE} algorithm is started (line \#13).
+\begin{lstlisting}[language=tcl]{ns-lib.tcl}
+# NHR
+Simulator instproc create-nhr-agent { node } {
+  set ragent [new Agent/NHR]
+  set addr [$node node-addr]
+  $ragent addr $addr
+  $ragent node $node
+  if [Simulator set mobile_ip_] {
+    $ragent port-dmux [$node demux]
+  }
+  $node addr $addr
+  $node set ragent_ $ragent
+  $self at 0.0  "$ragent start"    ;# start updates
+  $self at 30 "$ragent boundhole"
+  return $ragent
+}
+\end{lstlisting}
+
+The default binding attributes for the protocol is declared in \emph{ns-default.tcl} source file. Our protocols takes 4 parameters. The name and meaning of each parameter are described in table \ref{table-param}.
+\begin{table}[!htb]
+\centering
+\caption{Protocol parameter}
+\label{table-param}
+\begin{tabular}{|l|p{8cm}|}
+\hline
+Parameter               & Meaning                                                    \\ \hline
+limit\_boundhole\_hop\_ & Upper bound of vertices number of the hole polygon         \\ \hline
+hello\_period\_         & Period time to send HELLO packet (0 to send one time only) \\ \hline
+range\_                 & 40m                                                        \\ \hline
+delta\_                 & value of $\delta$ parameter                                \\ \hline
+n\_                     & value of $\eta$ parameter                                  \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=tcl]{ns-default.tcl}
+Agent/NHR set limit_boundhole_hop_ 100
+Agent/NHR set hello_period_ 0
+Agent/NHR set range_ 40
+Agent/NHR set delta_ 2.1
+Agent/NHR set n_ 10
+\end{lstlisting}

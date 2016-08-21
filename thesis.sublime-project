@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"options":
+	{
+		"pdf": "thesis",
+		"root": "thesis.tex"
+	}
+}

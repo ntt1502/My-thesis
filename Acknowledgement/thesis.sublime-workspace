@@ -1,0 +1,875 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"len",
+				"length〔variable〕"
+			],
+			[
+				"Biet",
+				"BitVecVal"
+			],
+			[
+				"pass",
+				"password	statement"
+			],
+			[
+				"grou",
+				"groups	function"
+			],
+			[
+				"no",
+				"node_count	statement"
+			],
+			[
+				"New",
+				"NewPointX"
+			],
+			[
+				"bas",
+				"base64_cipher	statement"
+			],
+			[
+				"hex",
+				"hex_cipher	statement"
+			],
+			[
+				"z",
+				"Z3Exception"
+			],
+			[
+				"id",
+				"is_readable"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"KEY",
+				"KEY2"
+			],
+			[
+				"0x",
+				"0xe2"
+			],
+			[
+				"b64",
+				"b64decoded"
+			],
+			[
+				"b",
+				"b64decoded"
+			],
+			[
+				"file",
+				"fileContent"
+			],
+			[
+				"0xff",
+				"0x00ff"
+			],
+			[
+				"trace",
+				"trace-nn"
+			],
+			[
+				"ns",
+				"ns-allinone-2"
+			],
+			[
+				"includ",
+				"includegraphics[options]{name}	latex-document"
+			],
+			[
+				"end",
+				"end{figure}	root.tex"
+			],
+			[
+				"inclu",
+				"includegraphics[options]{name}	latex-document"
+			],
+			[
+				"parag",
+				"paragraph{title}	latex-document"
+			],
+			[
+				"subsection",
+				"subsection{title}	latex-document"
+			],
+			[
+				"footno",
+				"footnote[number]{text}	latex-document"
+			],
+			[
+				"time",
+				"times	latex-mathsymbols"
+			],
+			[
+				"include",
+				"includegraphics{name}	latex-document"
+			],
+			[
+				"center",
+				"centerline{text}	latex-l2tabu"
+			],
+			[
+				"caption",
+				"caption{title}	latex-document"
+			],
+			[
+				"phan",
+				"phantom	tex"
+			],
+			[
+				"algorit",
+				"algorithmicensure	root.tex"
+			],
+			[
+				"usa",
+				"usepackage{package}	latex-document"
+			],
+			[
+				"para",
+				"paragraph{title}	latex-document"
+			],
+			[
+				"beginitem",
+				"begin{itemize}\\item	latex-document"
+			],
+			[
+				"begin",
+				"begin{itemize}\\item	latex-document"
+			],
+			[
+				"use",
+				"usepackage{package}	latex-document"
+			],
+			[
+				"begintablu",
+				"begin{tabular*}{width}{cols}	latex-document"
+			],
+			[
+				"inpu",
+				"input{file}	latex-document"
+			],
+			[
+				"subse",
+				"subsection{title}	latex-document"
+			],
+			[
+				"secti",
+				"section{title}	latex-document"
+			],
+			[
+				"usepac",
+				"usepackage[options]{package}	latex-document"
+			],
+			[
+				"begindocume",
+				"begin{document}	latex-document"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Primary Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Choose Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Primary Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Choose Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 335.0,
+		"last_filter": "make",
+		"selected_items":
+		[
+			[
+				"make",
+				"Build With: Make"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"sublimerge",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"sublimer",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"clang",
+				"Clang Format: Format Selection"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sublime",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"set syntax latexing",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"sntax latexi",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"latexing ",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"latexing clean",
+				"LaTeXing: Clean Temporary Output Dictionary"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"latex",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"latexing chec",
+				"LaTeXing: Check System"
+			],
+			[
+				"package contro",
+				"Package Control: List Packages"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"symbol",
+				"LaTeXing: Insert TeX Symbol"
+			],
+			[
+				"symbo",
+				"LaTeXing: Insert TeX Symbol"
+			],
+			[
+				"set syntax latex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"checks",
+				"LaTeXing: Check System"
+			],
+			[
+				"latexing",
+				"LaTeXing: Insert TeX Symbol"
+			],
+			[
+				"intsall",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 507.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.encoding()",
+			"view.encode()",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/huyvq/workspace/thesis/reports/thesis",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Acknowledgement",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Conclusions",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Conclusions/ConclusionsFigs",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Dedication",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Doc2Vec",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Doc2Vec/Chapter1Figs",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Doc2Vec/Chapter1Figs/EPS",
+		"/Users/huyvq/workspace/thesis/reports/thesis/GioithieuvebaitoanPLVB",
+		"/Users/huyvq/workspace/thesis/reports/thesis/GioithieuvebaitoanPLVB/Chapter1Figs",
+		"/Users/huyvq/workspace/thesis/reports/thesis/GioithieuvebaitoanPLVB/Chapter1Figs/EPS",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Introduction",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Introduction/IntroductionFigs",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Phieubangiao",
+		"/Users/huyvq/workspace/thesis/reports/thesis/References",
+		"/Users/huyvq/workspace/thesis/reports/thesis/StyleFiles",
+		"/Users/huyvq/workspace/thesis/reports/thesis/ThesisFigs",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Word2Vec",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Word2Vec/Chapter1Figs",
+		"/Users/huyvq/workspace/thesis/reports/thesis/Word2Vec/Chapter1Figs/EPS"
+	],
+	"file_history":
+	[
+		"/Users/huyvq/workspace/thesis/reports/thesis/thesis.sublime-project",
+		"/Users/huyvq/workspace/thesis/reports/thesis/thesis.tex",
+		"/Users/huyvq/workspace/thesis/reports/thesis/thesis.log",
+		"/Users/huyvq/Downloads/UITthesisLatex/UITthesisLatex/uitthesis.tex",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/Week6/generic.h",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/Week6/sort_generic.h",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/w2/sort (copy).h",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/w2/sort.h",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/w5/generic3.c",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/w5/generic2.c",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/w5/generic1.c",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/w3/hw/sort2.c",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/w3/hw/sort.h",
+		"/Volumes/#Soma/workspace.old/clang/graph/huyvq/w3/sort3.h",
+		"/Volumes/#Soma/workspace.old/clang/graph/3way.c",
+		"/Volumes/#Soma/workspace.old/clang/gtk/ternary/hhash.h",
+		"/Volumes/#Soma/workspace.old/clang/gtk/ternary/hbst.h",
+		"/Volumes/#Soma/workspace.old/clang/graph/final_exam/graph/lib_graph.h",
+		"/Volumes/#Soma/workspace.old/clang/graph/ver2/lib_graph.h",
+		"/Volumes/#Soma/workspace.old/clang/graph/ver1/lib_graph.c",
+		"/Volumes/#Soma/workspace.old/clang/graph/k53.c",
+		"/Volumes/#Soma/workspace.old/clang/graph/final_exam/graph/makefile",
+		"/Volumes/#Soma/workspace.old/clang/graph/exam.c",
+		"/Volumes/#Soma/workspace.old/clang/graph/final_exam/graph/exam.c",
+		"/Volumes/#Soma/workspace.old/clang/graph/final_exam/graph/pr",
+		"/Users/huyvq/workspace/thesis/note_coverage.txt",
+		"/Users/huyvq/workspace/thesis/shell-scripts/autobcp.py",
+		"/Users/huyvq/Library/Containers/it.bloop.airmail2/Data/Library/Application Support/Airmail/General/Tmp/proposal.tex",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/views/admin/words/index.html.erb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/views/layouts/_header.html.erb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/models/user.rb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/views/users/show.html.erb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/views/users/_search.html.erb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/views/users/_index.html.erb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/views/users/_user.html.erb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/assets/stylesheets/custom.css.scss",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/config/locales/ja.yml",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/controllers/static_pages_controller.rb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/config/routes.rb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/views/static_pages/help.html.erb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/db/seeds.rb",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/config/locales/en.yml",
+		"/Users/huyvq/workspace/tmp/it/learn_japanese_project/app/views/layouts/application.html.erb",
+		"/Users/huyvq/Desktop/test.c",
+		"/Users/huyvq/Dropbox/Thesis/experiment/ELBAR-new/convergence-time",
+		"/Users/huyvq/workspace/0xc633/content/themes/ichi/post.hbs",
+		"/Users/huyvq/workspace/0xc633/content/themes/ichi/default.hbs",
+		"/Users/huyvq/Downloads/elbar1111/proposal.tex",
+		"/Users/huyvq/Downloads/elbar1111/elbar.tex",
+		"/Users/huyvq/Desktop/sol.py",
+		"/Users/huyvq/Desktop/ezhp-sploit.rb",
+		"/Users/huyvq/www/html/21e39e5ed732cb89a1074ea0038b9d0e/final-bypass.php",
+		"/Users/huyvq/Desktop/get_offset2lib/get_offset2lib.c",
+		"/Users/huyvq/Desktop/submit_flag.py",
+		"/Users/huyvq/Desktop/test.py",
+		"/Users/huyvq/Desktop/re100.py",
+		"/Users/huyvq/Desktop/untitled.py",
+		"/Users/huyvq/Desktop/ctf/z3_multiplecative_hash_solver.py",
+		"/Users/huyvq/Desktop/z31.py",
+		"/Users/huyvq/Desktop/multiplicative_hash_solver.py",
+		"/Users/huyvq/Desktop/shell.c",
+		"/Users/huyvq/Desktop/exploit.c",
+		"/Users/huyvq/Desktop/z3/note.txt",
+		"/Users/huyvq/Downloads/test.py",
+		"/Users/huyvq/Downloads/topics.py",
+		"/Users/huyvq/Desktop/winapioverride32_src/Dumper/Dumper.cpp",
+		"/Users/huyvq/Desktop/winapioverride32_src/Dumper/ProcessesInfos.cpp",
+		"/Users/huyvq/Desktop/winapioverride32_src/WinAPIOverride32/filters.cpp",
+		"/Users/huyvq/workspace/thesis/shell-scripts/run.sh",
+		"/Users/huyvq/workspace/thesis/shell-scripts/autorunbcp.py",
+		"/Users/huyvq/workspace/thesis/shell-scripts/simulate.tcl",
+		"/Users/huyvq/workspace/thesis/shell-scripts/topo_data.tcl",
+		"/Users/huyvq/workspace/thesis/shell-scripts/test.py",
+		"/Users/huyvq/workspace/thesis/shell-scripts/autorunbcp.sh",
+		"/Users/huyvq/workspace/thesis/shell-scripts/testregex.sh",
+		"/Users/huyvq/workspace/thesis/shell-scripts/generate-simulate.sh",
+		"/Users/huyvq/Desktop/timer/src/Timer.h",
+		"/Users/huyvq/Dropbox/Thesis/experiment/ELBAR-new/140915/n1/n1-normal/30-elbar/cbr.tcl",
+		"/Users/huyvq/Desktop/timer/src/Timer.cpp",
+		"/Users/huyvq/workspace/0xc633/config.js",
+		"/private/var/folders/x3/hzxk4n2j44n78gxyt0rtg6t40000gn/T/config_database_Before_5a424676b30ffdadcf439ce1bc154c54739a4b59.yml",
+		"/Users/huyvq/Downloads/crypto100/public.key",
+		"/Users/huyvq/workspace/sec/cryptopals/set1/c2.py",
+		"/Users/huyvq/workspace/sec/cryptopals/set1/c1/c1.py",
+		"/Users/huyvq/Downloads/jn_elbar_0929/elbar.tex",
+		"/usr/local/texlive/2015basic/texmf-dist/tex/latex/caption/caption.sty",
+		"/Users/huyvq/Desktop/ctf/crypto/rsa_private_key_generate.py",
+		"/Users/huyvq/Desktop/ctf/rsa_private_key_generate.py",
+		"/Users/huyvq/Desktop/ctf/crypto/bigint/Mobilefish.com - Big number converter.html",
+		"/Users/huyvq/Downloads/test.c",
+		"/Users/huyvq/workspace/sec/tmp_script/z3-ftp.py",
+		"/Users/huyvq/workspace/sec/tmp_script/z3-solver-failed.py",
+		"/Users/huyvq/workspace/sec/tmp_script/z3-cone.py",
+		"/Users/huyvq/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/huyvq/workspace/0xc633/content/themes/ichi/assets/css/styles.css",
+		"/Users/huyvq/workspace/0xc633/content/data/README.md",
+		"/Users/huyvq/Desktop/c633.ghost.2015-09-17.json",
+		"/private/var/folders/x3/hzxk4n2j44n78gxyt0rtg6t40000gn/T/fz3temp-1/2015-09-17T18-25-30_ac6b4b_007_GET_api-deployments-1867d8351fab6671a82207ca397166d449827dda-log_200_0s.xml",
+		"/Users/huyvq/workspace/0xc633/core/server/controllers/frontend.js",
+		"/Users/huyvq/workspace/0xc633/core/server/routes/frontend.js",
+		"/private/var/folders/x3/hzxk4n2j44n78gxyt0rtg6t40000gn/T/core_server_middleware_middleware_Before_ad2aeac0eec6ef6c93974dfeb6a4ceb00274aee8.js",
+		"/private/var/folders/x3/hzxk4n2j44n78gxyt0rtg6t40000gn/T/core_server_controllers_frontend_Before_ad2aeac0eec6ef6c93974dfeb6a4ceb00274aee8.js",
+		"/Users/huyvq/workspace/0xc633/core/server/middleware/private-blogging.js",
+		"/private/var/folders/x3/hzxk4n2j44n78gxyt0rtg6t40000gn/T/core_server_routes_frontend_Before_ad2aeac0eec6ef6c93974dfeb6a4ceb00274aee8.js",
+		"/Users/huyvq/workspace/0xc633/core/server/middleware/oauth.js",
+		"/Users/huyvq/workspace/sec/sage-scripts/rsa-blind-signature.py",
+		"/Users/huyvq/workspace/0xc633/core/built/assets/ghost.min.css",
+		"/Users/huyvq/Downloads/pwn25.c",
+		"/Library/Preferences/SystemConfiguration/preferences.plist",
+		"/Users/huyvq/Downloads/crypto100/flag.enc",
+		"/Users/huyvq/Downloads/mypasswords",
+		"/Users/huyvq/workspace/thesis/140915/run-mac.sh",
+		"/Users/huyvq/workspace/thesis/140915/n1/n1-lifetime/20-ehds/simulate.tcl",
+		"/Users/huyvq/workspace/thesis/140915/n1/n1-lifetime/20-ehds/cbr.tcl",
+		"/Users/huyvq/workspace/thesis/140915/run.sh",
+		"/Users/huyvq/workspace/thesis/140915/nn/nn-normal/25-gpsr/simulate.tcl",
+		"/Users/huyvq/workspace/thesis/140915/nn/nn-normal/25-gpsr/cbr.tcl",
+		"/Users/huyvq/workspace/thesis/140915/nn/simulate.tcl",
+		"/Users/huyvq/workspace/thesis/140915/nn/25-ehds/cbr.tcl",
+		"/Users/huyvq/workspace/thesis/140915/nn/25-ehds/simulate.tcl",
+		"/Users/huyvq/workspace/thesis/ns-allinone-2.35/ns-2.35/Makefile",
+		"/Users/huyvq/workspace/thesis/140915/nn/cbr.tcl",
+		"/Users/huyvq/workspace/thesis/140915/n1/n1-normal/35-gear/cbr.tcl",
+		"/Users/huyvq/workspace/thesis/140915/n1/n1-normal/35-gear/simulate.tcl",
+		"/Users/huyvq/workspace/thesis/140915/n1/simulate.tcl",
+		"/Users/huyvq/workspace/thesis/140915/n1/35-ehds/simulate.tcl",
+		"/Users/huyvq/workspace/thesis/140915/n1/35-ehds/cbr.tcl",
+		"/Users/huyvq/workspace/thesis/140915/n1/cbr.tcl"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"deepdistdesign",
+			"exam",
+			"set X_",
+			"set Y_",
+			"set X_",
+			"Y",
+			"set",
+			"\\t",
+			"admin",
+			"link",
+			"h1index",
+			"background",
+			"n:",
+			"does",
+			"assume",
+			"[0-9][0-9]",
+			"0x",
+			",",
+			"char",
+			"password[i]",
+			"\"",
+			"\\n",
+			"set d",
+			"set s",
+			"\\ttlfnt",
+			"0x",
+			"code",
+			"h3",
+			"code",
+			".editor .entry-preview-content",
+			"[a-zA-Z0-9]{0,4}",
+			"set s(",
+			";",
+			"(",
+			"\\n",
+			"|",
+			"port_dmux_",
+			"forwardHAMode",
+			"Neighbors",
+			"hole",
+			"ehds",
+			"O_x_",
+			"ROUTING",
+			"possible_characters",
+			"challenge_iter",
+			"        \n",
+			"loop",
+			"x",
+			"\\n",
+			"set Y_ 9[8-9][0-9]",
+			"set X_ 9[8-9][0-9]",
+			"set X_ [0-9]",
+			"set X_ [0-2]",
+			"set X_ [0-2][0-9]",
+			"\\n",
+			"[0-9]+\\t[0-9]+.[0-9]+\\t9[7-9][0-9]+.[0-9]+\\t500.",
+			"[0-9]+\\t9[7-9][0-9].[0]+\\t[0-9]+.[0-9]+\\t500.",
+			"[0-9]+\\t[0-3][0-9].[0]+\\t[0-9]+.[0-9]+\\t500.",
+			"\n",
+			"forwardBoundHole",
+			"forwardAngleViewMode",
+			"GPSR",
+			"plugin",
+			"544 - region",
+			"1695",
+			"109",
+			"ELBARGRIDOFFLINE",
+			"GEAR",
+			"content",
+			"fb-root",
+			"fb-comment",
+			"fb",
+			"RadioModel",
+			".content-preview-content",
+			"entry-preview-content,.content-preview-content",
+			"entry-preview-content",
+			"markdown",
+			"achieve",
+			"fi-social-flickr",
+			"images",
+			"wrapper",
+			"class=\"wrapper\"",
+			"figure",
+			"Visuali",
+			" \\cline{3-7}",
+			"5",
+			"2 week ",
+			"w4/03 ",
+			"w3/03 ",
+			"Kết thúc ",
+			"Kết thúc",
+			"listing",
+			"my-label",
+			"equation",
+			"ELBAR",
+			"GPSR",
+			"gặp",
+			"hai",
+			"$",
+			"GRID OFFLINE",
+			"BOUNDHOLE",
+			"ELBAR",
+			"H",
+			"5",
+			"thuattoan",
+			"theorem",
+			"\n\\",
+			"phantomsection",
+			"alg",
+			"footnotesize",
+			"}\n",
+			"ppl",
+			"equation",
+			"}\n",
+			"alogirthmic",
+			" \\cellcolor{green}",
+			" \\cellcolor{red}",
+			"red",
+			".2em",
+			"|",
+			"2.5",
+			"w2/01",
+			"w1/01",
+			"w1",
+			"3",
+			"\\multicolumn{1}{c|}{",
+			"\\multicolumn{1}{c|}",
+			"\\multicolumn{1}{|c|}{} "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"password[i]",
+			"char",
+			"password",
+			"GEAR"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 155.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 96.0
+	},
+	"pinned_build_system": "",
+	"project": "/Users/huyvq/workspace/thesis/reports/thesis/thesis.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"route",
+				"config/routes.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 308.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
